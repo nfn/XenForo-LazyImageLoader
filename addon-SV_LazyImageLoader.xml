@@ -78,7 +78,7 @@
     </modification>
     <modification template="xengallery_media_thumb_item" modification_key="sv_lazyimageloader_gallery_thumbnails" description="Lazy Image Loader" execution_order="10" enabled="1" action="str_replace">
       <find><![CDATA[<img src="{$item.thumbnailUrl}?{$item.last_edit_date}" class="thumbImage" alt="{$item.media_title}" />]]></find>
-      <replace><![CDATA[<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="{$item.thumbnailUrl}?{$item.last_edit_date}" class="lazyload thumbImage" alt="{$item.media_title}" />]]></replace>
+      <replace><![CDATA[<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="{$item.thumbnailUrl}?{$item.last_edit_date}" class="lazyload thumbImage" alt="{$item.media_title}" />]]></replace>
     </modification>
     <modification template="page_container_js_head" modification_key="sv_lazyimageloader_page_container_js_head" description="Load Lazy Image Loader" execution_order="10" enabled="1" action="preg_replace">
       <find><![CDATA[#$#]]></find>
